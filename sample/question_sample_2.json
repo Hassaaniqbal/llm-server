@@ -1,0 +1,52 @@
+[
+    {
+        "Id": 1,
+        "Question": "What is the primary material used for most modern sewer pipes?",
+        "Answer": "PVC (polyvinyl chloride) or ABS (acrylonitrile butadiene styrene) plastic."
+    },
+    {
+        "Id": 2,
+        "Question": "What is the typical lifespan of a water heater?",
+        "Answer": "Around 8 to 12 years depending on usage and maintenance."
+    },
+    {
+        "Id": 3,
+        "Question": "What does a check valve do in a plumbing system?",
+        "Answer": "It allows water to flow in one direction only, preventing backflow."
+    },
+    {
+        "Id": 4,
+        "Question": "What tool is commonly used to cut copper pipes?",
+        "Answer": "A tubing cutter."
+    },
+    {
+        "Id": 5,
+        "Question": "How do you test for a toilet leak?",
+        "Answer": "By adding food coloring to the tank and checking for color in the bowl without flushing."
+    },
+    {
+        "Id": 6,
+        "Question": "What is the standard size for a residential toilet drain pipe?",
+        "Answer": "3 or 4 inches in diameter."
+    },
+    {
+        "Id": 7,
+        "Question": "What type of pipe is typically used for natural gas lines?",
+        "Answer": "Black steel pipe or flexible corrugated stainless-steel tubing (CSST)."
+    },
+    {
+        "Id": 8,
+        "Question": "What does a plumber's wrench look like, and what is its primary use?",
+        "Answer": "It has an adjustable jaw and a long handle for turning pipes and fittings tightly."
+    },
+    {
+        "Id": 9,
+        "Question": "How do you fix a dripping showerhead?",
+        "Answer": "By replacing the washer, O-ring, or cartridge, or by tightening the connection with a wrench or pliers."
+    },
+    {
+        "Id": 10,
+        "Question": "What is the primary purpose of a T&P valve in a water heater?",
+        "Answer": "To relieve pressure and temperature buildup to prevent explosions or damage to the water heater."
+    }
+]
