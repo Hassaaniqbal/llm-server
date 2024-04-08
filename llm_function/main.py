@@ -1,4 +1,4 @@
-import json
+from typing import List
 
 from langchain.prompts import PromptTemplate
 from langchain.output_parsers import ResponseSchema, StructuredOutputParser
@@ -6,14 +6,11 @@ from langchain_community.llms import Ollama
 
 from utils.parsers import get_json_data, json_question_formatter
 
-# qna_string = json_question_formatter(get_json_data('./sample/question_sample_1.json'))
-qna_string = json_question_formatter(get_json_data('./sample/question_sample_2.json'))
-
 response_schemas = [
     ResponseSchema(
         name="scores",
         description="array of scores according to the questions in the following format: [{question: string, answer: string, score: int}]",
-        type="array(objects)"
+        type="array(objects)",
     ),
 ]
 
@@ -38,6 +35,8 @@ model = Ollama(model="llama2")
 
 chain = prompt | model | output_parser
 
-results = chain.invoke({"qna_string": qna_string})
 
-print(json.dumps(results, indent=4))
+def evaluate_results(json_data: List[dict]):
+    qna_string = json_question_formatter(json_data)
+    results = chain.invoke({"qna_string": qna_string})
+    return results
