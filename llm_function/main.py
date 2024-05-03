@@ -6,6 +6,7 @@ from langchain_community.llms import Ollama
 
 from utils.parsers import get_json_data, json_question_formatter
 
+#return type
 response_schemas = [
     ResponseSchema(
         name="scores",
