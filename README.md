@@ -1,4 +1,12 @@
-# Houspro LLM Server
+# Microsystem for Analyzing Service Provider Expertise in an On-Demand Household Service Web Application
+A microsystem for evaluating the expertise of service providers in an on-demand household service web application. The system utilizes the Llama2 LLM from Meta AI and leverages the LangChain framework for seamless communication with the model.
+
+The primary objective is to provide a comprehensive solution for assessing the knowledge and proficiency of service providers before allowing them to offer their services on the web application. Service providers are required to attend a quiz, and their answers are analyzed by the microsystem using the Llama2 LLM.
+
+The LangChain framework enables efficient interaction with the LLM, allowing the system to process the natural language responses from the service providers and generate insightful evaluations of their expertise.
+
+The microsystem streamlines the onboarding process by automating the initial assessment of service provider expertise, potentially saving time and effort for the administrators. It serves as a reliable screening mechanism to ensure that only qualified service providers are admitted to the web application, enhancing the overall quality of services offered to customers.
+
 
 ## Prerequisites
 - Install the latest [Python](https://www.python.org/downloads/) language.
