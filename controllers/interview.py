@@ -94,7 +94,7 @@ def generate_interview_results(provider_id: int):
             {"provider_id": provider_id},
         )
 
-        #
+     
         updated_results_map_list = [
             {"providerId": row[1], "status": row[2], "score": row[3]}
             for row in updated_llm_response_by_provider_id
@@ -102,7 +102,7 @@ def generate_interview_results(provider_id: int):
 
         database.close()
 
-        #
+  
         return jsonify(results=updated_results_map_list)
     else:
         #map the question asked and answer given in dictionary format for exact service provider
@@ -139,4 +139,3 @@ def process_llm_results(results_map: list[dict[str, Any]], provider_id: int):
     database.commit()
     database.close()
 
-## doubt is what is "results_map" - earlier it was not declared
